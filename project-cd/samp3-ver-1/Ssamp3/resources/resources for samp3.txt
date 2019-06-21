@@ -1,0 +1,6 @@
+Resources used FOR SAMP3 Player
+
+1. Plus.bmp   (Picture for add and remove buttons)
+2. Minus.bmp
+3. Bluebackground.bmp for splashscreen (Picture for background for splash screen)
+4. Information Picture for Tip Of Day Icon

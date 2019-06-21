@@ -1,0 +1,5 @@
+Songs can be played by double clicking the songname in the playlist.
+You can skip a part of the song by draging the slider too and fro.
+MP3 File Information can be seen using MP3 File info from View menu.
+Your favourite song can be played repeatedly by checking the Repeat song. 
+Select any song in the playlist and click - Button to delete that song.

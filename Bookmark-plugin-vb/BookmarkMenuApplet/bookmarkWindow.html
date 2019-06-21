@@ -1,0 +1,58 @@
+<HTML>
+<head>
+    <title>Bookmark Menu Applet Window</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+    function setOpenerAsTarget() {
+        document.applets["BookmarkMenuApplet"].setTarget(opener.name);
+    }
+
+    function goSearch() {
+        document.fastForm.method="GET";
+        document.fastForm.action="http://www.alltheweb.com/cgi-bin/search";
+        document.fastForm.target=opener.name;
+        document.fastForm.submit();
+        opener.focus();
+    }
+
+    function goDictionary() {
+        document.fastForm.method="POST";
+        document.fastForm.action="http://www.m-w.com/cgi-bin/dictionary";
+        document.fastForm.target=opener.name;
+        document.fastForm.va.value=document.fastForm.query.value;
+        document.fastForm.submit();
+        opener.focus();
+    }
+
+
+//-->
+</SCRIPT>
+</head>
+<body onLoad="setOpenerAsTarget()">
+
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="80" >
+<tr><td height=20>
+    <applet code="BookmarkMenuApplet.class" name="BookmarkMenuApplet" height=20 width=80 MAYSCRIPT>
+        <param name=filename  value="bookmark.html">
+        <!--param name=target    value="j1menutarget"-->
+    </applet>
+
+
+<tr><td>
+<form action="http://www.alltheweb.com/cgi-bin/search" 
+		method="GET" name="fastForm" target="" onSubmit="goSearch()">
+	<input type="hidden" name="va">
+	<input size="10" name="query">
+<tr><td>
+	<font face="verdana,arial" size="-1">
+	<a href="#" onClick="goSearch()">
+	Search</a>|<a name="dictLink"
+		href="#" onClick="goDictionary()" 
+	>Dict</a>
+	</font>
+</form>
+</table>
+
+</body>
+</HTML>
+

@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+
+using namespace std;
+void mark(bool a[], int n, int t)
+{
+    int i = 2, num;
+    while ( (num = i*n) <= t )
+    {
+        a[ num-1 ] = 1;
+        i++;
+    }
+}
+
+void prime(int n)
+{
+    
+    if (n >= 2)
+    {
+        
+        bool p[n];
+        memset(p, 0, sizeof(p));
+
+        for (int i=1; i<n; i++)
+        {
+            if ( p[i] == 0 )
+            {
+                cout << i+1 << endl;
+                mark(p, i+1, n);
+            }
+        }
+    }
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    prime(n);
+    return 0;
+}

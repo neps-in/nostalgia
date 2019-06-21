@@ -1,0 +1,39 @@
+[Version]
+Version=1.0.0.0
+
+[mp3 player.exe <0009>]
+Dest=$(AppPath)
+Date=2/5/01
+Time=08:38
+Version=1.0.0.0
+CABFilename=mp3 player.CAB
+CABRunFile=mp3 player.exe
+Uses1=msvbvm60.dll
+Uses2=OLEAUT32.DLL
+Uses3=OLEPRO32.DLL
+Uses4=ASYCFILT.DLL
+Uses5=STDOLE2.TLB
+Uses6=COMCAT.DLL
+Uses7=AMOVIE.OCX
+Uses8=dwCmnDlg.dll
+Uses9=MSCOMCTL.OCX
+Uses10=Mp3Info.ocx
+Uses11=COMDLG32.OCX
+
+[AMOVIE.OCX <0009>]
+Dest=$(WinSysPath)
+Date=2/1/00
+Time=07:14
+Version=5.1.70.327
+
+[dwCmnDlg.dll <0009>]
+Dest=$(WinSysPath)
+Date=9/17/97
+Time=15:18
+Version=1.0.0.2
+
+[Mp3Info.ocx <0009>]
+Dest=$(WinSysPath)
+Date=3/2/98
+Time=22:15
+Version=1.0.0.1

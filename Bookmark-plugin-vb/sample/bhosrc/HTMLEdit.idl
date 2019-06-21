@@ -1,0 +1,38 @@
+// HTMLEdit.idl : IDL source for HTMLEdit.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (HTMLEdit.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(1E1B2878-88FF-11D2-8D96-D7ACAC95951F),
+		dual,
+		helpstring("IViewSource Interface"),
+		pointer_default(unique)
+	]
+	interface IViewSource : IDispatch
+	{
+	};
+
+[
+	uuid(1E1B286C-88FF-11D2-8D96-D7ACAC95951F),
+	version(1.0),
+	helpstring("HTMLEdit 1.0 Type Library")
+]
+library HTMLEDITLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(1E1B2879-88FF-11D2-8D96-D7ACAC95951F),
+		helpstring("ViewSource Class")
+	]
+	coclass ViewSource
+	{
+		[default] interface IViewSource;
+	};
+};

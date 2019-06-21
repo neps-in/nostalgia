@@ -1,0 +1,23 @@
+a            { font-family: Arial, Sans Serif; color: blue;}
+A:hover      { color: red;}
+b            { font-weight: bold }
+basefont     { font-family: Arial, Sans Serif; }
+body         { font-family: Arial, Sans Serif; background-color: white; bgcolor: #FFFFFF);
+				  margin-top: 0; margin-bottom:0; margin-left: 0; margin-right: 0;}
+dd           { font-family: Arial, Sans Serif; }
+dl           { font-family: Arial, Sans Serif; }
+dt           { font-family: Arial, Sans Serif; }
+h1           { color: black; font-family: Arial, Sans Serif; text-transform: capitalize; font-weight: bold }
+h2           { color: black; font-family: Arial, Sans Serif; text-transform: capitalize; font-weight: bold }
+h3           { color: black; font-family: Arial, Sans Serif; text-transform: capitalize; font-weight: bold }
+h4           { color: black; font-family: Arial, Sans Serif; text-transform: capitalize; font-weight: bold }
+h5           { color: black; font-family: Arial, Sans Serif; text-transform: capitalize; font-weight: bold }
+h6           { color: black; font-family: Arial, Sans Serif; font-weight: normal }
+hr           { color: black; }
+i            { font-family: Arial, Sans Serif; font-style: italic }
+li           { font-family: Arial, Sans Serif; }
+p            { font-family: Arial, Sans Serif; }
+table        { font-family: Arial, Sans Serif; }
+td           { font-family: Arial, Sans Serif; }
+ul           { font-family: Arial, Sans Serif; }
+pre          { font-family: monospace; font-size: 90%; }

@@ -1,0 +1,33 @@
+<HTML>
+<head>
+<title>Bookmark Window Opener</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+    function nameThisWindow(){
+        if(window.name==""){
+            window.name="openerWindow";
+            print("Assigned new name: "+window.name);
+        }else
+            print("Window name is: "+window.name);
+    }
+    function openWindow() {
+        bookmarkWindow=window.open("bookmarkWindow.html", "BookmarkWindow","width=80,height=80,left=0,top=0,resizable=1,alwaysRaised=yes");
+    }
+    function closeWindow() {
+        bookmarkWindow.close();
+    }
+    function print(msg){
+        java.lang.System.out.println(msg);
+    }
+//-->
+</SCRIPT>
+</head>
+<body onLoad="nameThisWindow();">
+
+<form>
+    <input type="button" value="Open Bookmarks" onClick="openWindow()">
+    <input type="button" value="Close Bookmarks" onClick="closeWindow()">
+</form>
+</body>
+</HTML>
+

@@ -1,0 +1,5 @@
+frmmain = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+frmAbout = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+frminfo = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+frmTip = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+frmsamp3splash = 0, 0, 0, 0, C, 0, 0, 0, 0, C
