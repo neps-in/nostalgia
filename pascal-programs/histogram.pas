@@ -30,7 +30,6 @@ begin
 		read(a[i]);
         
 	end;
-    writeln('j := ':10,' a[j]:=  ':10, ' h[j] :=  ':10 );
 
     {Process histogram}
     for i:= 0 to 20 do
