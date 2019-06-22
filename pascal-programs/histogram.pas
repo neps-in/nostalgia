@@ -3,14 +3,14 @@ program histogram;
   Given input: An array of numbers say 12, 13, 11, 2, 15, 19, 22, 22, 22, 21, 11 
   Output should be 
   Numbers   Occurance
-  12		1
-  13		1
-  11		2
-  2         1
-  15        1
-  19        1
-  22        3
-  21        1
+  12		*
+  13		*
+  11		* *
+  2         *
+  15        *
+  19        *
+  22        * * *
+  21        *
 	
 }
 
@@ -32,6 +32,7 @@ begin
 	end;
     writeln('j := ':10,' a[j]:=  ':10, ' h[j] :=  ':10 );
 
+    {Process histogram}
     for i:= 0 to 20 do
     begin
         for j:= 0 to n do
@@ -40,10 +41,10 @@ begin
 		        h[i] := h[i] + 1;
 	      
 	    end;
-	  { writeln( i:10 ,a[i]:10,h[i]:10 ); }
 
     end;
     
+    {Print Cool output}
     writeln('Numbers':10, 'Frq.':5);
 	for i:= 0 to 20 do
 	begin
