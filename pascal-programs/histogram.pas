@@ -1,5 +1,5 @@
 program histogram;
-{ 
+(*******************************************************************************
   Given input: An array of numbers say 12, 13, 11, 2, 15, 19, 22, 22, 22, 21, 11 
   Output should be 
   Numbers   Occurance
@@ -11,8 +11,7 @@ program histogram;
   19        *
   22        * * *
   21        *
-	
-}
+********************************************************************************)
 
 var a,h: array[0..100] of integer;
 	i,j,m,n: integer;
