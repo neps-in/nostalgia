@@ -73,8 +73,11 @@ int main(){
 	int i,m ;
 	m = 100000;
 	for(i=0;i<m;i++)
-	{
+	{	
+		//Check if its a palindrome
 		if( isPalindrome(i) ){
+
+			// if its a palindrome check if its a prime number.
 			if ( isPrime(i) ){		
 				printf("%d\t",i);
 			}
